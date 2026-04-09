@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lappeenranta</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lappeenranta</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="matkailu.html">Matkailu</a></li>
+                <li><a href="talousarvio.html">Talousarvio</a></li>
+                <li><a href="muu.html">Muu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="img/palaute.jpg" alt="Palaute kuva"><br>
+
+            <h2>Lappeenranta-humppa Erkki Junkkarisen esittämänä:</h2>
+
+            <audio controls>
+                <source src="audio/erkki_junkkarinen_lappeenrantaan.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio><br>
+
+            <h2>Kirjaston palautekysely</h2>
+
+            <form method="post">
+                <label>Palautteen luonne</label><br>
+
+                <select id="luonne" name="varusteet" size="1">
+                    <option value="kiitos">Kiitos</option>
+                    <option value="moite">Moite</option>
+                    <option value="kysymys">Kysymys</option>
+                </select>
+
+                <br><br>
+
+                <label>Palauteteksti</label><br>
+
+                <textarea name="viesti" rows="5" cols="25">Kirjoita tähän lisätietoja tarvittaessa.</textarea>
+
+                <p><b>Yhteystiedot</b></p>
+
+                <table class="yhteystiedot">
+                    <tr> <!-- Etunimi ja sukunimi -->
+                        <th>
+                            <label for="etunimi">Etunimi:</label><br>
+                        </th>
+                        <th>
+                            <label for="sukunimi">Sukunimi:</label><br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="etunimi" name="etunimi" style="width: 100%"><br><br>
+                        </td>
+                        <td>
+                            <input type="text" id="sukunimi" name="sukunimi" style="width: 100%"><br><br>
+                        </td>
+                    </tr>
+                    <tr> <!-- Sähköposti -->
+                        <th colspan=2>
+                            <label for="sahkoposti">Sähkoposti:</label><br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                            <input type="text" id="sahkoposti" name="sahkoposti" style="width: 100%"><br><br>
+                        </td>
+                    </tr>
+                    <tr> <!-- Puhelin -->
+                        <th colspan=2>
+                            <label for="puh">Puhelin:</label><br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                            <input type="text" id="puh" name="puh" style="width: 100%"><br><br>
+                        </td>
+                    </tr>
+                </table>
+
+                <input type="submit" value="Lähetä">
+                <input type="reset" value="Tyhjennä">
+            </form><br>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.lappeenranta.fi/fi" target="_blank">Lappeenrannan kotisivut</a>
+    </footer>
+</body>
+</html>
