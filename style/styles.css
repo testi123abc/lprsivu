@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px;
+    p, li {
+        text-align: left;
+    }
+    img {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+form {
+    background-color: #e8e8e8;
+    border: 10px outset #d8d8d8;
+    padding: 10px;
+    text-align: left;
+}
+
+table.yhteystiedot {
+    td, th {
+        text-align: left;
+    }
+}
+
+table.talous {
+    border: 1px solid green;
+    border-collapse: collapse;
+    max-width: 700px;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+
+    td, th {
+        border-left: 1px solid green;
+        width: 50px;
+        height: 10%;
+    }
+
+    th {
+        background-color: green;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: darkseagreen;
+        color: seashell;
+    }
+
+    tr:nth-child(3n), tr:nth-child(3n+1) {
+        border-bottom: 1px solid green;
+    }
+
+    tr:nth-child(odd) {
+        background-color: mediumaquamarine;
+        color: white;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    img {
+        width: 100%;
+    }
+}
+
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    flex: 1;
+    max-width: 300px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    a {
+        color: aqua;
+    }
+}
+
+@media (max-width: 850px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    header, ul, nav ul li {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
